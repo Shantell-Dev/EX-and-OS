@@ -11,14 +11,17 @@ let spaces = Array(9).fill(null)
 
 const startGame = () => {
     boxes.forEach(box => box.addEventListener('click',boxClicked))
-}
+
 function boxClicked(e) {
     const id = e.target
     if(!spaces[id]){
         spaces[id] = currentPlayer
         e.target.innerText = currentPlayer
-        currentPlayer = currentPlayer == X_TEXT ? O_TEXT: X_TEXT
+        currentPlayer = currentPlayer === X_TEXT ? O_TEXT: X_TEXT
     }
-    //console.log(e.target)
+    else{
+        return false
+    }
+}
 }
 startGame(currentPlayer)
