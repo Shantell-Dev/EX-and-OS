@@ -10,7 +10,14 @@ let spaces = Array(9).fill(null)
 //console.log(spaces)
 
 const startGame = () => {
+    console.log("i have started");
+    console.log(boxes);
     boxes.forEach(box => box.addEventListener('click',boxClicked))
+};
+window.addEventListener("load",(event) => {
+  console.log("page is fully loaded");
+  startGame();
+});
 
 function boxClicked(e) {
     const id = e.target
@@ -19,9 +26,7 @@ function boxClicked(e) {
         e.target.innerText = currentPlayer
         currentPlayer = currentPlayer === X_TEXT ? O_TEXT: X_TEXT
     }
-    else{
-        return false
     }
 }
 }
-startGame(currentPlayer)
+
