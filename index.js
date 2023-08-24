@@ -13,6 +13,7 @@ startButton.addEventListener("click", () => {
   // Initialize your game or perform any necessary setup here
 });
 
+
 const O_TEXT = "O";
 const X_TEXT = "X";
 let currentPlayer = X_TEXT;
