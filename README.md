@@ -12,7 +12,7 @@ CODE EXPLANATION
 To avoid an html collection and keep my code simple ,i converted my html collection into an array and saving that into our boxes variable,by using the built in function called array.from .
 
 2.Creating some functionality for my game; set up a variable called const O_TEXT and X_TEXT.I'll start my game off with X_Text.
-To keep track of which block was clicked of the nine blocks and save that so the O_Text doesnt select the clicked box :i created a variable (let spaces) = an array and an array of 9(8) spaces.
+To keep track of which block was clicked of the nine blocks and save that so the O_Text doesnt select the clicked box :i created a variable (let spaces) = an array and an array of 9() spaces.
 
 3.To start this game i created a function.I looped over boxes and added an eventListener to each one of the dom elements.
 I used an if statement in order to change between xoxo and i did by taking the current player variable saying its equal to whatever the following if statement is going to return.Then saved O_Text or X_Text inside the variable im overriding.
