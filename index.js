@@ -2,15 +2,14 @@ const playerText = document.getElementById("playerText");
 const startPage = document.getElementById("startPage");
 const gamePage = document.getElementById("gamePage");
 const restartBtn = document.getElementById("restartBtn");
-const boxes = Array.from(document.getElementsByClassName("box"));
+const boxes = Array.from(document.getElementsByClassName("box")); 
 const winnerIndicator = getComputedStyle(document.body).getPropertyValue(
   "--winning-blocks"
 );
 
 startButton.addEventListener("click", () => {
-  startPage.style.display = "none"; // Hide the start page
-  gamePage.style.display = "block"; // Show the game page
-  // Initialize your game or perform any necessary setup here
+  startPage.style.display = "none"; 
+  gamePage.style.display = "block"; 
 });
 
 
