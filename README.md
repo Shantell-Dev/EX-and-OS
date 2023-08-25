@@ -14,7 +14,7 @@ To avoid an html collection and keep my code simple ,i converted my html collect
 2.Creating some functionality for my game; set up a variable called const O_TEXT and X_TEXT.I'll start my game off with X_Text.
 To keep track of which block was clicked of the nine blocks and save that so the O_Text doesnt select the clicked box :i created a variable (let spaces) = an array and an array of 9() spaces.
 
-3.To start this game i created a function.I looped over boxes and added an eventListener to each one of the dom elements.
+3.To start this game i created a function.I looped over boxes and added an eventListener to each one of the Dom elements.
 I used an if statement in order to change between xoxo and i did by taking the current player variable saying its equal to whatever the following if statement is going to return.Then saved O_Text or X_Text inside the variable im overriding.
 
 4.Last thing i did was to craete a player has won function and resetting a basic reset button.To reset the game i called the restartbutton and added an eventListener to it.I also created a restart Function which clears out everything on the gameboard and clear out spaces array.
